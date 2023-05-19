@@ -1,0 +1,59 @@
+name: Open Knowledge
+type: profile
+description: 'Open Knowledge distribution profile.'
+core_version_requirement: ^9
+version: '0.0.1'
+project: open_knowledge
+
+# Dependencies that Open Social can not live without.
+dependencies:
+  # core
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor5
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search_api_page
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  - civicrm:civicrm
+  - civicrm:civicrm_entity
+  - civicrm:civicrmtheme
+  # Knowledge
+  - knowledge:knowledge
+  - knowledge:knowledge_report
+
+# Modules that are installed by default but can be uninstalled.
+install:
+  # Contrib
+  - module_filter:module_filter
+
+themes:
+  - olivero
+  - claro
+distribution:
+  name: Open Knowledge
