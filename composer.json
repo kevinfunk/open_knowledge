@@ -1,5 +1,5 @@
 {
-  "name": "drupal/open_knowledge",
+  "name": "sandbox/bluegeek9-3351432",
   "description": "Open Knowledge is a distribution for building Knowledge Centered Service.",
   "type": "drupal-profile",
   "license": "GPL-2.0-or-later",
@@ -42,6 +42,9 @@
     "drupal/module_filter": "^4.0",
     "drupal/search_api_page": "^1.0",
     "drupal/visitors": "^2.14"
+  },
+  "replace": {
+      "drupal/open_knowledge": "self.version"
   },
   "config": {
       "sort-packages": true,
