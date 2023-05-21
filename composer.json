@@ -1,6 +1,6 @@
 {
-  "name": "s-ayers/open_knowledge",
-  "description": "Open Knowledge is a distribution for building Knowledge Centered Service knowledge bases.",
+  "name": "drupal/open_knowledge",
+  "description": "Open Knowledge is a distribution for building Knowledge Centered Service.",
   "type": "drupal-profile",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
@@ -35,16 +35,13 @@
     "cweagans/composer-patches": "^1.6.0",
     "drupal/admin_toolbar": "3.3.0",
     "drupal/civicrm_entity": "^3.4",
-    "drupal/core-composer-scaffold": "9.5.5",
-    "drupal/core-project-message": "9.5.5",
-    "drupal/core-recommended": "9.5.5",
-    "drupal/knowledge": "1.x-dev@dev",
+    "drupal/core-composer-scaffold": "9.5.9",
+    "drupal/core-project-message": "9.5.9",
+    "drupal/core-recommended": "9.5.9",
+    "drupal/knowledge": "1.x-dev",
     "drupal/module_filter": "^4.0",
     "drupal/search_api_page": "^1.0",
     "drupal/visitors": "^2.14"
-  },
-  "replace": {
-      "drupal/open_knowledge": "self.version"
   },
   "config": {
       "sort-packages": true,
