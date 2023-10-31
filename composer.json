@@ -1,6 +1,6 @@
 {
-  "name": "sandbox/bluegeek9-3351432",
-  "description": "Open Knowledge is a distribution for building Knowledge Centered Service.",
+  "name": "drupal/open_knowledge",
+  "description": "Open Knowledge is a distribution for knowledge base.",
   "type": "drupal-profile",
   "license": "GPL-2.0-or-later",
   "minimum-stability": "dev",
@@ -28,30 +28,24 @@
   },
   "require": {
     "php": "^7.4 || ^8.0",
-    "civicrm/civicrm-core": "~5.42",
-    "civicrm/civicrm-drupal-8": "~5.42",
-    "civicrm/civicrm-packages": "~5.42",
     "composer/installers": "~1.0 || ~2.0",
     "cweagans/composer-patches": "^1.6.0",
     "drupal/admin_toolbar": "3.3.0",
-    "drupal/civicrm_entity": "^3.4",
     "drupal/core-composer-scaffold": "9.5.9",
     "drupal/core-project-message": "9.5.9",
     "drupal/core-recommended": "9.5.9",
     "drupal/knowledge": "1.x-dev",
     "drupal/module_filter": "^4.0",
     "drupal/search_api_page": "^1.0",
-    "drupal/visitors": "^2.14"
-  },
-  "replace": {
-      "drupal/open_knowledge": "self.version"
+    "drupal/visitors": "^2"
   },
   "config": {
       "sort-packages": true,
     "allow-plugins": {
       "composer/installers": true,
       "cweagans/composer-patches": true,
-      "drupal/core-composer-scaffold": true
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true
     }
   }
 }
