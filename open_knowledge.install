@@ -2,11 +2,11 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the open knowledge installation profile.
+ * Install, update and uninstall functions for the open knowledge profile.
  */
 
-use Drupal\user\Entity\User;
 use Drupal\shortcut\Entity\Shortcut;
+use Drupal\user\Entity\User;
 
 /**
  * Implements hook_install().

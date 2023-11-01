@@ -1,11 +1,9 @@
 name: Open Knowledge
 type: profile
 description: 'Open Knowledge distribution profile.'
-core_version_requirement: ^9
-version: '0.0.1'
+core_version_requirement: ^9 || ^10
 project: open_knowledge
 
-# Dependencies that Open Social can not live without.
 dependencies:
   # core
   - node
@@ -38,7 +36,6 @@ dependencies:
   - file
   - views
   - views_ui
-  - tour
   - automated_cron
   - civicrm:civicrm
   - civicrm:civicrm_entity
