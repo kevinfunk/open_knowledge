@@ -38,8 +38,8 @@ dependencies:
   - views_ui
   - automated_cron
   # Knowledge
-  # - knowledge:knowledge
-  # - knowledge:knowledge_report
+  - knowledge:knowledge
+  - knowledge:knowledge_report
 
 # Modules that are installed by default but can be uninstalled.
 install:
