@@ -37,12 +37,9 @@ dependencies:
   - views
   - views_ui
   - automated_cron
-  - civicrm:civicrm
-  - civicrm:civicrm_entity
-  - civicrm:civicrmtheme
   # Knowledge
-  - knowledge:knowledge
-  - knowledge:knowledge_report
+  # - knowledge:knowledge
+  # - knowledge:knowledge_report
 
 # Modules that are installed by default but can be uninstalled.
 install:
