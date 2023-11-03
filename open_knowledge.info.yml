@@ -46,6 +46,7 @@ install:
   # Contrib
   - module_filter:module_filter
   - crm:crm_case
+  - printable:printable
 
 themes:
   - olivero

@@ -35,6 +35,7 @@
     "drupal/crm": "1.0.x-dev@dev",
     "drupal/knowledge": "1.x-dev",
     "drupal/module_filter": "^4.0",
+    "drupal/printable": "^3.0",
     "drupal/search_api_page": "^1.0",
     "drupal/visitors": "^2.0"
   },
