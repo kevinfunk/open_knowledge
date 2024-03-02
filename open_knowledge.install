@@ -5,9 +5,6 @@
  * Install, update and uninstall functions for the open knowledge profile.
  */
 
-use Drupal\shortcut\Entity\Shortcut;
-use Drupal\user\Entity\User;
-
 /**
  * Implements hook_install().
  *
@@ -16,14 +13,17 @@ use Drupal\user\Entity\User;
  * @see system_install()
  */
 function open_knowledge_install() {
+  $entity_type_manager = \Drupal::entityTypeManager();
+  $user_storage = $entity_type_manager->getStorage('user');
   // Assign user 1 the "administrator" role.
   /** @var \Drupal\user\Entity\User $user */
-  $user = User::load(1);
+  $user = $user_storage->load(1);
   $user->addRole('administrator');
   $user->save();
 
+  $shortcut_storage = $entity_type_manager->getStorage('shortcut');
   // Populate the default shortcut set.
-  $shortcut = Shortcut::create([
+  $shortcut = $shortcut_storage->create([
     'shortcut_set' => 'default',
     'title' => t('Add content'),
     'weight' => -20,
@@ -31,7 +31,7 @@ function open_knowledge_install() {
   ]);
   $shortcut->save();
 
-  $shortcut = Shortcut::create([
+  $shortcut = $shortcut_storage->create([
     'shortcut_set' => 'default',
     'title' => t('All content'),
     'weight' => -19,
