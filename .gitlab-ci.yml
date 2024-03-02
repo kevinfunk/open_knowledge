@@ -1,4 +1,4 @@
-/################
+################
 # DrupalCI GitLabCI template
 #
 # Gitlab-ci.yml to replicate DrupalCI testing for Contrib
@@ -36,8 +36,6 @@ include:
     ref: $_GITLAB_TEMPLATES_REF
     file:
       - '/includes/include.drupalci.main.yml'
-      # EXPERIMENTAL: For Drupal 7, remove the above line and uncomment the below.
-      # - '/includes/include.drupalci.main-d7.yml'
       - '/includes/include.drupalci.variables.yml'
       - '/includes/include.drupalci.workflows.yml'
 
