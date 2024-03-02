@@ -5,14 +5,23 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_linked_crm_case
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - field_layout
     - image
+    - knowledge
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -47,6 +56,12 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_linked_crm_case:
+    type: knowledge_default
+    weight: 121
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
