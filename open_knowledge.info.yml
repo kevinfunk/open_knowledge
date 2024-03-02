@@ -1,8 +1,8 @@
 name: Open Knowledge
 type: profile
 description: 'Open Knowledge distribution profile.'
-core_version_requirement: ^9 || ^10
-project: open_knowledge
+core_version_requirement: ^10
+project: Open Knowledge
 
 dependencies:
   # core

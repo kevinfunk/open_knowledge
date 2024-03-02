@@ -38,6 +38,7 @@
     "drupal/pdf_api": "^2.4",
     "drupal/printable": "^3.0",
     "drupal/search_api_page": "^1.0",
+    "drupal/search_api_solr": "^4.3",
     "drupal/visitors": "^2.0"
   },
   "config": {
@@ -46,7 +47,10 @@
       "composer/installers": true,
       "cweagans/composer-patches": true,
       "drupal/core-composer-scaffold": true,
-      "drupal/core-project-message": true
+      "drupal/core-project-message": true,
+      "php-http/discovery": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
     }
   }
 }
