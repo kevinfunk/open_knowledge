@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - knowledge
+    - node
+id: node.field_linked_crm_case
+field_name: field_linked_crm_case
+entity_type: node
+type: knowledge
+settings:
+  knowledge_type: crm_case
+  short_period: 15
+  medium_period: 90
+  long_period: 365
+module: knowledge
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

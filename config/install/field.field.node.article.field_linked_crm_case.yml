@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_crm_case
+    - node.type.article
+  module:
+    - knowledge
+id: node.article.field_linked_crm_case
+field_name: field_linked_crm_case
+entity_type: node
+bundle: article
+label: 'Linked Cases'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    kid: 0
+    last_knowledge_timestamp: 0
+    last_knowledge_uid: 0
+    total_count: 0
+default_value_callback: ''
+settings:
+  anonymous: 0
+  form_location: true
+  per_page: 50
+field_type: knowledge

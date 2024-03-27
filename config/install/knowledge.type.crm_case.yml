@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: crm_case
+label: 'CRM Case'
+target_entity_type_id: node
+incident_entity_type_id: crm_case
+description: 'Links CRM Cases to Articles.'

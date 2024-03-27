@@ -3,11 +3,20 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.knowledge_coach
+    - field.field.user.user.knowledge_leader
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: user.user.compact
 targetEntityType: user
 bundle: user
@@ -25,4 +34,7 @@ content:
     weight: 0
     region: content
 hidden:
+  knowledge_coach: true
+  knowledge_leader: true
   member_for: true
+  search_api_excerpt: true
