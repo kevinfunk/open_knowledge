@@ -1,5 +1,1 @@
-Open Knowledge is a Drupal profile designed to facilitate the KCS method.
-
-
-
-KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
+Open Knowledge, a powerful and versatile Drupal distribution designed to unlock the potential of collaborative learning and knowledge sharing. Built on the robust Drupal framework, Open Knowledge is a Knowledge-Centered Service (KCS®) knowledge-base

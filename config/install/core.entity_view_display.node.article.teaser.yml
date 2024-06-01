@@ -5,14 +5,20 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.medium
+    - field.field.node.article.linked_node
+    - field.field.node.article.linked_url
     - node.type.article
   module:
-    - image
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.article.teaser
 targetEntityType: node
 bundle: article
@@ -25,17 +31,6 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_style: medium
-      image_link: content
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
     region: content
   field_tags:
     type: entity_reference_label
@@ -50,5 +45,7 @@ content:
     region: content
 hidden:
   comment: true
-  field_image: true
   field_tags: true
+  linked_node: true
+  linked_url: true
+  search_api_excerpt: true

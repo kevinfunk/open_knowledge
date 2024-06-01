@@ -47,6 +47,7 @@ install:
   - module_filter:module_filter
   - crm:crm_case
   - printable:printable
+  - backlinks:backlinks
 
 themes:
   - olivero

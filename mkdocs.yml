@@ -1,3 +1,30 @@
 site_name: Open Knowledge
 theme:
   name: material
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.sections
+    - navigation.path
+    - search.suggest
+  # - navigation.tabs
+
+nav:
+  - Home: index.md
+  - Solve:
+    - Structure:
+      - Referencing: solve/structure/referencing.md
+  - Tags: tags.md
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+repo_url: https://git.drupalcode.org/project/open_knowledge
+copyright: Copyright &copy; 2020 - 2024 Steven Ayers<br/>KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://git.drupalcode.org/project/open_knowledge

@@ -5,15 +5,22 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.wide
+    - field.field.node.article.linked_node
+    - field.field.node.article.linked_url
     - node.type.article
   module:
     - comment
-    - image
+    - field_layout
+    - layout_discovery
+    - link
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -33,18 +40,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 110
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_style: wide
-      image_link: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
+    weight: 4
     region: content
   field_tags:
     type: entity_reference_label
@@ -52,11 +48,25 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
+    region: content
+  linked_url:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
-hidden: {  }
+hidden:
+  linked_node: true
+  search_api_excerpt: true
