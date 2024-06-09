@@ -44,10 +44,12 @@ dependencies:
 # Modules that are installed by default but can be uninstalled.
 install:
   # Contrib
-  - module_filter:module_filter
-  - crm:crm_case
-  - printable:printable
   - backlinks:backlinks
+  - crm:crm_case
+  - module_filter:module_filter
+  - printable:printable
+  - sitemap:sitemap
+  - visitors:visitors
 
 themes:
   - olivero

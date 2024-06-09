@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.linked_crm_case
     - field.field.node.article.field_tags
     - field.field.node.article.linked_node
     - field.field.node.article.linked_url
@@ -12,6 +13,7 @@ dependencies:
   module:
     - comment
     - field_layout
+    - knowledge
     - layout_discovery
     - link
     - text
@@ -41,6 +43,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 4
+    region: content
+  linked_crm_case:
+    type: knowledge_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_tags:
     type: entity_reference_label

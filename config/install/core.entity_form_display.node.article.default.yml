@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.linked_crm_case
     - field.field.node.article.field_tags
     - field.field.node.article.linked_node
     - field.field.node.article.linked_url
@@ -11,6 +12,7 @@ dependencies:
   module:
     - comment
     - field_layout
+    - knowledge
     - layout_discovery
     - path
     - text
@@ -43,6 +45,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  linked_crm_case:
+    type: knowledge_default
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

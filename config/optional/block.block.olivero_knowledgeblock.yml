@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - knowledge
+    - node
+    - user
+  theme:
+    - olivero
+id: olivero_knowledgeblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: knowledge_block
+settings:
+  id: knowledge_block
+  label: 'Link Case'
+  label_display: visible
+  provider: knowledge
+  type: crm_case
+  field_name: linked_crm_case
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      knowledge_candidate: knowledge_candidate
+      knowledge_contributor: knowledge_contributor
+      knowledge_publisher: knowledge_publisher
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
