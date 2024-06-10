@@ -46,6 +46,7 @@ install:
   # Contrib
   - backlinks:backlinks
   - crm:crm_case
+  - metatag:metatag
   - module_filter:module_filter
   - printable:printable
   - sitemap:sitemap
