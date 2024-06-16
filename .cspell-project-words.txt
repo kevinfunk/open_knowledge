@@ -1,3 +1,7 @@
 bluegeek
 gnomovision
 yoyodyne
+fontawesome
+mexic
+texa
+knowledgeblock

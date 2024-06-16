@@ -47,6 +47,8 @@ install:
   - backlinks:backlinks
   - crm:crm_case
   - metatag:metatag
+  - moderation_note:moderation_note
+  - moderation_sidebar:moderation_sidebar
   - module_filter:module_filter
   - printable:printable
   - sitemap:sitemap

@@ -38,4 +38,9 @@ function open_knowledge_install() {
     'link' => ['uri' => 'internal:/admin/content'],
   ]);
   $shortcut->save();
+
+  $workflow = \Drupal::entityTypeManager()->getStorage('workflow')->load('knowledge');
+  $type_settings = $workflow->get('type_settings');
+  $type_settings['entity_types']['node'] = ['article'];
+  $workflow->set('type_settings', $type_settings)->save();
 }

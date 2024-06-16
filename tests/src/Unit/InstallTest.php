@@ -47,6 +47,13 @@ class InstallTest extends UnitTestCase {
   protected $shortcutStorage;
 
   /**
+   * The workflow storage.
+   *
+   * @var \Drupal\Core\Entity\EntityStorageInterface|\PHPUnit\Framework\MockObject\MockObject
+   */
+  protected $workflowStorage;
+
+  /**
    * {@inheritdoc}
    */
   protected function setUp(): void {
@@ -59,6 +66,7 @@ class InstallTest extends UnitTestCase {
 
     $this->userStorage = $this->createMock(EntityStorageInterface::class);
     $this->shortcutStorage = $this->createMock(EntityStorageInterface::class);
+    $this->workflowStorage = $this->createMock(EntityStorageInterface::class);
   }
 
   /**
@@ -67,9 +75,13 @@ class InstallTest extends UnitTestCase {
    * @coversFunction open_knowledge_install
    */
   public function testOpenKnowledgeInstall() {
-    $this->entityTypeManager->expects($this->exactly(2))
+    $this->entityTypeManager->expects($this->exactly(3))
       ->method('getStorage')
-      ->willReturn($this->userStorage, $this->shortcutStorage);
+      ->willReturnMap([
+        ['user', $this->userStorage],
+        ['shortcut', $this->shortcutStorage],
+        ['workflow', $this->workflowStorage],
+      ]);
 
     $user = $this->createMock('Drupal\user\Entity\User');
     $this->userStorage->expects($this->once())
@@ -88,6 +100,22 @@ class InstallTest extends UnitTestCase {
       ->willReturn($shortcut);
     $shortcut->expects($this->exactly(2))
       ->method('save');
+
+    $workflow = $this->createMock('Drupal\Core\Config\Config');
+    $workflow->expects($this->once())
+      ->method('get')
+      ->with('type_settings')
+      ->willReturn(['entity_types' => ['node' => []]]);
+    $workflow->expects($this->once())
+      ->method('set')
+      ->with('type_settings', ['entity_types' => ['node' => ['article']]])
+      ->willReturnSelf();
+    $workflow->expects($this->once())
+      ->method('save');
+    $this->workflowStorage->expects($this->once())
+      ->method('load')
+      ->with('knowledge')
+      ->willReturn($workflow);
 
     open_knowledge_install();
   }

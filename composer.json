@@ -37,6 +37,7 @@
     "drupal/extlink": "^1.7",
     "drupal/knowledge": "1.x-dev",
     "drupal/metatag": "^2.0",
+    "drupal/moderation_sidebar": "^1.7",
     "drupal/module_filter": "^4.0",
     "drupal/pdf_api": "^2.4",
     "drupal/printable": "^3.0",

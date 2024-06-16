@@ -4,13 +4,19 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.linked_crm_case
+    - field.field.node.article.field_cause
+    - field.field.node.article.field_environment
+    - field.field.node.article.field_resolution
     - field.field.node.article.field_tags
+    - field.field.node.article.knowledge_audience
+    - field.field.node.article.linked_crm_case
     - field.field.node.article.linked_node
     - field.field.node.article.linked_url
     - node.type.article
+    - workflows.workflow.knowledge
   module:
     - comment
+    - content_moderation
     - field_layout
     - knowledge
     - layout_discovery
@@ -28,7 +34,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 1
     region: content
     settings:
       rows: 9
@@ -38,25 +44,43 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 8
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-  linked_crm_case:
-    type: knowledge_default
-    weight: 26
+  field_cause:
+    type: text_textarea
+    weight: 4
     region: content
-    settings: {  }
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_environment:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_resolution:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -64,29 +88,47 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  knowledge_audience:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  linked_crm_case:
+    type: knowledge_default
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 12
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -101,7 +143,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
