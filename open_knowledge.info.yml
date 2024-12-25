@@ -1,7 +1,7 @@
 name: Open Knowledge
 type: profile
 description: 'Open Knowledge distribution profile.'
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11
 project: Open Knowledge
 
 dependencies:
@@ -39,7 +39,7 @@ dependencies:
   - automated_cron
   # Knowledge
   - knowledge:knowledge
-  - knowledge:knowledge_report
+  # - knowledge:knowledge_report
 
 # Modules that are installed by default but can be uninstalled.
 install:
@@ -50,7 +50,7 @@ install:
   - moderation_note:moderation_note
   - moderation_sidebar:moderation_sidebar
   - module_filter:module_filter
-  - printable:printable
+  # - printable:printable
   - sitemap:sitemap
   - visitors:visitors
 
