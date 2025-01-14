@@ -9,6 +9,9 @@ dependencies:
     - field.field.node.article.field_resolution
     - field.field.node.article.field_tags
     - field.field.node.article.knowledge_audience
+    - field.field.node.article.knowledge_governance
+    - field.field.node.article.knowledge_governance_user
+    - field.field.node.article.knowledge_governance_user_role
     - field.field.node.article.linked_crm_case
     - field.field.node.article.linked_node
     - field.field.node.article.linked_url
@@ -17,16 +20,10 @@ dependencies:
   module:
     - comment
     - content_moderation
-    - field_layout
     - knowledge
-    - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
+third_party_settings: {  }
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -93,6 +90,32 @@ content:
     weight: 14
     region: content
     settings: {  }
+    third_party_settings: {  }
+  knowledge_governance:
+    type: options_buttons
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  knowledge_governance_user:
+    type: entity_reference_autocomplete_tags
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  knowledge_governance_user_role:
+    type: entity_reference_autocomplete_tags
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   linked_crm_case:
     type: knowledge_default

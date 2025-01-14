@@ -7,19 +7,17 @@ dependencies:
     - user
   theme:
     - olivero
-id: olivero_knowledgeblock
+id: olivero_knowledge_quality_block
 theme: olivero
 region: sidebar
 weight: 0
 provider: null
-plugin: knowledge_block
+plugin: knowledge_quality_block
 settings:
-  id: knowledge_block
-  label: 'Link Case'
+  id: knowledge_quality_block
+  label: 'Knowledge Quality block'
   label_display: visible
   provider: knowledge
-  type: crm_case
-  field_name: linked_crm_case
 visibility:
   user_role:
     id: user_role
@@ -28,9 +26,7 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       administrator: administrator
-      knowledge_candidate: knowledge_candidate
-      knowledge_contributor: knowledge_contributor
-      knowledge_publisher: knowledge_publisher
+      knowledge_coach: knowledge_coach
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.knowledge_governance_user_role
+    - node.type.article
+id: node.article.knowledge_governance_user_role
+field_name: knowledge_governance_user_role
+entity_type: node
+bundle: article
+label: 'Governance roles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

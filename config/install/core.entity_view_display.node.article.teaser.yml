@@ -5,20 +5,18 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_cause
+    - field.field.node.article.field_environment
+    - field.field.node.article.field_resolution
     - field.field.node.article.field_tags
+    - field.field.node.article.knowledge_audience
+    - field.field.node.article.linked_crm_case
     - field.field.node.article.linked_node
     - field.field.node.article.linked_url
     - node.type.article
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.article.teaser
 targetEntityType: node
 bundle: article
@@ -32,6 +30,11 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_tags:
     type: entity_reference_label
     label: above
@@ -41,11 +44,17 @@ content:
     weight: 10
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
     region: content
 hidden:
   comment: true
-  field_tags: true
+  field_cause: true
+  field_environment: true
+  field_resolution: true
+  knowledge_audience: true
+  linked_crm_case: true
   linked_node: true
   linked_url: true
   search_api_excerpt: true

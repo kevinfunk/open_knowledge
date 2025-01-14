@@ -3,14 +3,6 @@ status: true
 dependencies:
   config:
     - knowledge.type.crm_case
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: knowledge.crm_case.default
 targetEntityType: knowledge
 bundle: crm_case

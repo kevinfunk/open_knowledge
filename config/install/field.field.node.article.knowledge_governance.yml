@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.knowledge_governance
+    - node.type.article
+id: node.article.knowledge_governance
+field_name: knowledge_governance
+entity_type: node
+bundle: article
+label: Governance
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Governance
+  off_label: Experience
+field_type: boolean

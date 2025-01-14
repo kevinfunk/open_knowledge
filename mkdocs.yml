@@ -7,7 +7,7 @@ theme:
     - navigation.sections
     - navigation.path
     - search.suggest
-  # - navigation.tabs
+    - navigation.tabs
 
 nav:
   - Home: index.md
@@ -22,7 +22,7 @@ plugins:
       tags_file: tags.md
 
 repo_url: https://git.drupalcode.org/project/open_knowledge
-copyright: Copyright &copy; 2020 - 2024 Steven Ayers<br/>KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
+copyright: Copyright &copy; 2020 - 2025 Steven Ayers<br/>KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
 extra:
   generator: true
   social:
