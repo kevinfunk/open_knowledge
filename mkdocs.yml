@@ -11,15 +11,98 @@ theme:
 
 nav:
   - Home: index.md
-  - Solve:
-      - Structure:
-          - Referencing: solve/structure/referencing.md
+  - Capture:
+      - Integration: capture/01 integration.md
+      - Context: capture/02 context.md
+      - Relevant: capture/03 relevant.md
+  - Structure:
+      - '01': structure/01.md
+      - '02': structure/02.md
+      - '03': structure/03.md
+      - '04': structure/04.md
+      - '05': structure/05.md
+      - '06': structure/06.md
+      - '07': structure/07.md
+      - '08': structure/08.md
+      - '09': structure/09.md
+      - '10': structure/10.md
+  - Reuse:
+      - '01': reuse/01.md
+      - '02': reuse/02.md
+      - '03': reuse/03.md
+      - '04': reuse/04.md
+      - '05': reuse/05.md
+      - '06': reuse/06.md
+      - '07': reuse/07.md
+  - Improve:
+      - '01': improve/01.md
+      - '02': improve/02.md
+      - '03': improve/03.md
+      - '04': improve/04.md
+      - '05': improve/05.md
+      - '06': improve/06.md
+  - Content Health:
+      - '01': content health/01.md
+      - '02': content health/02.md
+      - '03': content health/03.md
+      - '04': content health/04.md
+      - '05': content health/05.md
+      - '06': content health/06.md
+      - '07': content health/07.md
+      - '08': content health/08.md
+      - '09': content health/09.md
+      - '10': content health/10.md
+      - '11': content health/11.md
+      - '12': content health/12.md
+      - '13': content health/13.md
+      - '14': content health/14.md
+  - Process Integration:
+      - '01': process integration/01.md
+      - '02': process integration/02.md
+      - '03': process integration/03.md
+      - '04': process integration/04.md
+      - '05': process integration/05.md
+      - '06': process integration/06.md
+      - '07': process integration/07.md
+      - '08': process integration/08.md
+      - '09': process integration/09.md
+      - '10': process integration/10.md
+      - '11': process integration/11.md
+  - Performance Assessment:
+      - '01': performance assessment/01.md
+      - '02': performance assessment/02.md
+      - '03': performance assessment/03.md
+      - '04': performance assessment/04.md
+      - '05': performance assessment/05.md
+      - '06': performance assessment/06.md
+      - '07': performance assessment/07.md
+      - '08': performance assessment/08.md
+      - '09': performance assessment/09.md
+      - '10': performance assessment/10.md
+      - '11': performance assessment/11.md
+      - '12': performance assessment/12.md
+      - '13': performance assessment/13.md
+      - '14': performance assessment/14.md
+      - '15': performance assessment/15.md
+      - '16': performance assessment/16.md
+      - '17': performance assessment/17.md
+      - '18': performance assessment/18.md
+      - '19': performance assessment/19.md
+      - '20': performance assessment/20.md
+      - '21': performance assessment/21.md
+      - '22': performance assessment/22.md
+      - '23': performance assessment/23.md
+      - '24': performance assessment/24.md
+      - '25': performance assessment/25.md
+      - '26': performance assessment/26.md
+
   - Tags: tags.md
 
 plugins:
   - search
   - tags:
       tags_file: tags.md
+      enabled: true
 
 repo_url: https://git.drupalcode.org/project/open_knowledge
 copyright: Copyright &copy; 2020 - 2025 Steven Ayers<br/>KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.

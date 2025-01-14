@@ -1,0 +1,36 @@
+##Mandatory##
+
+As the issue is being solved information can be captured in the requestor's context and does not have to be re-typed to create an new article.
+
+##Practice/Technique##
+
+* Capture
+* Capture the Requestor's Context
+
+##Reference: KCS v6 Practices Guide##
+
+[Technique 1.2 Capture the Requestor's Context](https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide/030/030/010/020)
+
+##Demo Requirements for Verified Only##
+Scenario 1
+
+##OB/Config/Cust/NS/SF##
+
+
+##Native Product Capability##
+
+##Mechanism for Config##
+
+##Config Strategy##
+
+##Dependencies & Version Numbers##
+
+
+##Documentation##
+
+
+---
+tags:
+  - Capture
+  - Capture the Requestor's Context
+---
