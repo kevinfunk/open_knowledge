@@ -1,8 +1,15 @@
-Open Knowledge, a powerful and versatile Drupal distribution designed to unlock the potential of collaborative learning and knowledge sharing. Built on the robust Drupal framework, Open Knowledge is a Knowledge-Centered Service (KCS®) knowledge-base
+This is meant to track Open Knowledge's progress to being Verified.
 
-✅
-❌
-❎
+
+[KCS v6 Verified & Aligned Self-Assessment Worksheets](references.md)
+
+| Status                         | Emoji | Count |
+|--------------------------------|:-----:|------:|
+| [Complete](tags/#_1)           | ✅    | 14    |
+| [Incomplete](tags/#_2)         | ❌    |  6    |
+| [Not Mandatory](tags/#_3)      | ❎    |  6    |
+| [Unknown](tags/#_4)            | ❓    | 50    |
+| Total                          |       | 76    |
 
 ##Definitions##
 

@@ -11,8 +11,11 @@ theme:
     - navigation.tabs
 
 nav:
-  - Home: index.md
+  - Home:
+      - 'Home': index.md
+      - 'References': references.md
   - Scenarios:
+      - 'Scenarios': 'scenario/index.md'
       - 'Scenario 01': 'scenario/01.md'
       - 'Scenario 02': 'scenario/02.md'
       - 'Scenario 03': 'scenario/03.md'
@@ -30,40 +33,40 @@ nav:
       - 'Capture - Context': capture/02.md
       - 'Capture - Relevant': capture/03.md
   - Structure:
-      - 'Structure 01': structure/01.md
-      - 'Structure 02': structure/02.md
-      - 'Structure 03': structure/03.md
-      - 'Structure 04': structure/04.md
-      - 'Structure 05': structure/05.md
-      - 'Structure 06': structure/06.md
-      - 'Structure 07': structure/07.md
-      - 'Structure 08': structure/08.md
-      - 'Structure 09': structure/09.md
-      - 'Structure 10': structure/10.md
+      - 'Structure - Article Node Type': structure/01/index.md
+      - 'Structure - Issue Field': structure/02/index.md
+      - 'Structure - Node Form': structure/03/index.md
+      - 'Structure - Fields': structure/04/index.md
+      - 'Structure - Node Types': structure/05/index.md
+      - 'Structure - Field Access': structure/06/index.md
+      - 'Structure - Basic Formatting': structure/07/index.md
+      - 'Structure - Lists': structure/08/index.md
+      - 'Structure - Hyperlinks': structure/09/index.md
+      - 'Structure - Multilingual': structure/10/index.md
   - Reuse:
-      - 'Reuse 01': reuse/01.md
-      - 'Reuse 02': reuse/02.md
-      - 'Reuse 03': reuse/03.md
-      - 'Reuse 04': reuse/04.md
-      - 'Reuse 05': reuse/05.md
-      - 'Reuse 06': reuse/06.md
-      - 'Reuse 07': reuse/07.md
+      - 'Reuse - Federated search': reuse/01.md
+      - 'Reuse - DMZ': reuse/02.md
+      - 'Reuse - Linking': reuse/03.md
+      - 'Reuse - Linked Multiple': reuse/04.md
+      - 'Reuse - Delete Link': reuse/05.md
+      - 'Reuse - Link non KCS content': reuse/06.md
+      - 'Reuse - Linked Revision': reuse/07.md
   - Improve:
-      - 'Improve 01': improve/01.md
+      - 'Improve - Moderation Notes': improve/01.md
       - 'Improve 02': improve/02.md
       - 'Improve 03': improve/03.md
-      - 'Improve 04': improve/04.md
-      - 'Improve 05': improve/05.md
-      - 'Improve 06': improve/06.md
+      - 'Improve - New Article Duplicate Check': improve/04.md
+      - 'Improve - Merge Duplicates': improve/05.md
+      - 'Improve - Edit Multiple Article Simultaneously': improve/06.md
   - Content Health:
-      - 'Content Health 01': content health/01.md
-      - 'Content Health 02': content health/02.md
-      - 'Content Health 03': content health/03.md
-      - 'Content Health 04': content health/04.md
+      - 'Content Health - Meta Data': content health/01.md
+      - 'Content Health - More Meta Data': content health/02.md
+      - 'Content Health - Content Moderation': content health/03.md
+      - 'Content Health - Restrict Search by Confidence': content health/04.md
       - 'Content Health 05': content health/05.md
       - 'Content Health 06': content health/06.md
-      - 'Content Health 07': content health/07.md
-      - 'Content Health 08': content health/08.md
+      - 'Content Health - Auto Publish': content health/07.md
+      - 'Content Health - Community Create/Edit Articles': content health/08.md
       - 'Content Health 09': content health/09.md
       - 'Content Health 10': content health/10.md
       - 'Content Health 11': content health/11.md
@@ -75,20 +78,20 @@ nav:
       - 'Process Integration 03': process integration/03.md
       - 'Process Integration 04': process integration/04.md
       - 'Process Integration 05': process integration/05.md
-      - 'Process Integration 06': process integration/06.md
-      - 'Process Integration 07': process integration/07.md
-      - 'Process Integration 08': process integration/08.md
-      - 'Process Integration 09': process integration/09.md
+      - 'Process Integration - Search Tuning': process integration/06.md
+      - 'Process Integration - Indexing': process integration/07.md
+      - 'Process Integration - SEO': process integration/08.md
+      - 'Process Integration - Search Weights': process integration/09.md
       - 'Process Integration 10': process integration/10.md
       - 'Process Integration 11': process integration/11.md
   - Performance Assessment:
       - 'Performance Assessment 01': performance assessment/01.md
-      - 'Performance Assessment 02': performance assessment/02.md
-      - 'Performance Assessment 03': performance assessment/03.md
-      - 'Performance Assessment 04': performance assessment/04.md
-      - 'Performance Assessment 05': performance assessment/05.md
-      - 'Performance Assessment 06': performance assessment/06.md
-      - 'Performance Assessment 07': performance assessment/07.md
+      - 'Performance Assessment - Citation Rate': performance assessment/02.md
+      - 'Performance Assessment - Link Rate': performance assessment/03.md
+      - 'Performance Assessment - Article State': performance assessment/04.md
+      - 'Performance Assessment - Content Standard Checklist': performance assessment/05.md
+      - 'Performance Assessment - Process Adherence Report': performance assessment/06.md
+      - 'Performance Assessment - Incident Links': performance assessment/07.md
       - 'Performance Assessment 08': performance assessment/08.md
       - 'Performance Assessment 09': performance assessment/09.md
       - 'Performance Assessment 10': performance assessment/10.md
@@ -115,10 +118,9 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
-      enabled: true
 
 repo_url: https://git.drupalcode.org/project/open_knowledge
-copyright: Copyright &copy; 2020 - 2025 Steven Ayers<br/>KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
+copyright: KCS® is a service mark of the Consortium for Service InnovationTM. Open Knowledge is not certified by the Consortium for Service Innovation.
 extra:
   generator: false
   social:
