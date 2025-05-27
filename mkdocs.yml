@@ -114,6 +114,7 @@ nav:
 
   - Tags: tags.md
 
+  - 'Code Coverage': coverage/index.html
 plugins:
   - search
   - tags:
