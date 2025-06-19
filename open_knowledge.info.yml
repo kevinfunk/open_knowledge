@@ -57,5 +57,10 @@ install:
 themes:
   - olivero
   - claro
+
 distribution:
   name: Open Knowledge
+
+extra:
+  recommended:
+    - field_permissions
