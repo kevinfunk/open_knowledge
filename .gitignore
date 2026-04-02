@@ -1,3 +1,8 @@
 composer.lock
-web/*
 vendor/*
+.ddev/*
+docroot/*
+!docroot/profiles/
+docroot/profiles/*
+!docroot/profiles/custom*/
+recipes/*
