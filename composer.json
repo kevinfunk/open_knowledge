@@ -65,6 +65,7 @@
     "drupal/metatag": "^2.0",
     "drupal/moderation_sidebar": "^1.7",
     "drupal/module_filter": "^5",
+    "drupal/mysql57": "^1.0",
     "drupal/search_api_page": "^1.0",
     "drupal/search_api_solr": "^4.3",
     "drupal/sitemap": "^2.0@beta",
